@@ -2,7 +2,7 @@
   background-color: #ededed;
 }
 
-.main-border {
+.form-border {
   border: 4px solid black;
   border-radius: 6px;
   padding-left: 20px;
@@ -11,6 +11,10 @@
   margin-left: 50px;
 }
 
+/*
+selection box for main menu,
+appears when user hovers
+*/
 .selection-box {
   border: 4px solid transparent;
 }
