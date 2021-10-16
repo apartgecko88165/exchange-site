@@ -1,0 +1,5 @@
+Server designed for simple storage of user personal information.
+Never commit changes when this contains user data.
+
+
+[!-Server Version 0.01-!]
