@@ -1,0 +1,67 @@
+$basic-margins: 12px;
+$basic-font: Arial, Helvetica, sans-serif;
+
+.bg-style {
+    background-color: rgb(237, 237, 237);
+}
+
+.main-border {
+    border: 4px solid black;
+    border-radius: 6px;
+    padding-left: 20px;
+    width: 17%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.selection-box {
+    border: 4px solid transparent;
+    &:hover {
+        border-color: lightgray;
+        width: 23%;
+        border-radius: 6px;
+    }
+}
+
+.form {
+    margin-left: $basic-margins;
+    margin-right: $basic-margins;
+    font-family: $basic-font;
+}
+
+.button-text {
+    border: solid 4px black;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 14px;
+    font-family: $basic-font;
+    text-align: center;
+    position: absolute;
+    transform: translate(50px, -225px);
+}
+
+#tree-img {
+    position: absolute;
+    transform: translate(450px, -650px);
+}
+
+#title-text {
+    position: absolute;
+    transform: translate(450px, -630px);
+}
+
+#login {
+    @extend .form;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#enter-name {
+    @extend .form;
+    margin-top: 5px;
+    margin-bottom: 14px;
+}
+
+#enter-code {
+    @extend .form;
+}
