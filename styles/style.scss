@@ -1,11 +1,14 @@
+// basic variables for our site
 $basic-margins: 12px;
 $basic-font: Arial, Helvetica, sans-serif;
 
+// background color, to fit mismatched image
 .bg-style {
     background-color: rgb(237, 237, 237);
 }
 
-.main-border {
+// border element for join form
+.form-border {
     border: 4px solid black;
     border-radius: 6px;
     padding-left: 20px;
@@ -14,6 +17,10 @@ $basic-font: Arial, Helvetica, sans-serif;
     margin-left: 50px;
 }
 
+/*
+selection box for main menu,
+appears when user hovers
+*/
 .selection-box {
     border: 4px solid transparent;
     &:hover {
@@ -23,12 +30,14 @@ $basic-font: Arial, Helvetica, sans-serif;
     }
 }
 
+// basic form settings for join page
 .form {
     margin-left: $basic-margins;
     margin-right: $basic-margins;
     font-family: $basic-font;
 }
 
+// text for selection buttons on main menu
 .button-text {
     border: solid 4px black;
     border-radius: 6px;
@@ -40,28 +49,33 @@ $basic-font: Arial, Helvetica, sans-serif;
     transform: translate(50px, -225px);
 }
 
+// styling for tree image on homepage
 #tree-img {
     position: absolute;
     transform: translate(450px, -650px);
 }
 
+// title for tree image
 #title-text {
     position: absolute;
     transform: translate(450px, -630px);
 }
 
+// basic login styling for join page
 #login {
     @extend .form;
     font-size: 20px;
     font-weight: bold;
 }
 
+// enter name field
 #enter-name {
     @extend .form;
     margin-top: 5px;
     margin-bottom: 14px;
 }
 
+// enter join code field
 #enter-code {
     @extend .form;
 }
