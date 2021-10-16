@@ -49,6 +49,7 @@ appears when user hovers
     transform: translate(50px, -225px);
 }
 
+// add dynamic href text
 #join-text-button { @extend .button-text; }
 #view-text-button { @extend .button-text; }
 
