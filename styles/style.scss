@@ -49,6 +49,9 @@ appears when user hovers
     transform: translate(50px, -225px);
 }
 
+#join-text-button { @extend .button-text; }
+#view-text-button { @extend .button-text; }
+
 // styling for tree image on homepage
 #tree-img {
     position: absolute;
