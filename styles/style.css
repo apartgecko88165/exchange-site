@@ -3,6 +3,7 @@
 }
 
 .form-border {
+  background-color: #f1f1f1;
   border: 4px solid black;
   border-radius: 6px;
   padding-left: 20px;
@@ -25,12 +26,6 @@ appears when user hovers
   border-radius: 6px;
 }
 
-.form, #login, #enter-name, #enter-code {
-  margin-left: 12px;
-  margin-right: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .button-text, #join-text-button, #view-text-button {
   border: solid 4px black;
   border-radius: 6px;
@@ -41,6 +36,18 @@ appears when user hovers
   position: absolute;
   -webkit-transform: translate(50px, -225px);
           transform: translate(50px, -225px);
+}
+
+#form, #login, #enter-name, #enter-code {
+  margin-left: 12px;
+  margin-right: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#join-submit-button {
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #tree-img {
@@ -55,12 +62,21 @@ appears when user hovers
           transform: translate(450px, -630px);
 }
 
+#bg-image-join {
+  background-image: url("https://pac-hs.co.uk/wp-content/uploads/2016/11/Red-Stripes-Wrapture-Printed-Tissue.jpg");
+}
+
 #login {
   font-size: 20px;
   font-weight: bold;
 }
 
 #enter-name {
+  margin-top: 5px;
+  margin-bottom: 14px;
+}
+
+#enter-code {
   margin-top: 5px;
   margin-bottom: 14px;
 }

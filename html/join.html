@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="bg-image-join">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +9,13 @@
 </head>
 <body>
     <div class="form-border">
-        <form class="form">
+        <form id="form">
             <h1 id="login">Join Exchange</h1>
             <label for="enter-name" id="enter-name">What is your name?</label><br>
             <input id="enter-name" name="enter-name" type="text" placeholder="IE: James Jimmy III"></input>
-            <label for="enter-name" id="enter-name">Enter join code:</label><br>
-            <input id="enter-name" name="enter-name" type="text" placeholder="IE: abcd-1234-efgh-5678"></input>
+            <label for="enter-code" id="enter-code">Enter join code:</label><br>
+            <input id="enter-code" name="enter-code" type="text" placeholder="IE: abcd-1234-efgh-5678"></input>
+            <button id="join-submit-button">Join Exchange</button>
         </form>
     </div>
     <script src="../src/join.js"></script>

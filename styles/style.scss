@@ -9,6 +9,7 @@ $basic-font: Arial, Helvetica, sans-serif;
 
 // border element for join form
 .form-border {
+    background-color: rgb(241, 241, 241);
     border: 4px solid black;
     border-radius: 6px;
     padding-left: 20px;
@@ -30,13 +31,6 @@ appears when user hovers
     }
 }
 
-// basic form settings for join page
-.form {
-    margin-left: $basic-margins;
-    margin-right: $basic-margins;
-    font-family: $basic-font;
-}
-
 // text for selection buttons on main menu
 .button-text {
     border: solid 4px black;
@@ -49,9 +43,22 @@ appears when user hovers
     transform: translate(50px, -225px);
 }
 
+// basic form settings for join page
+#form {
+    margin-left: $basic-margins;
+    margin-right: $basic-margins;
+    font-family: $basic-font;
+}
+
 // add dynamic href text
 #join-text-button { @extend .button-text; }
 #view-text-button { @extend .button-text; }
+
+#join-submit-button {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 // styling for tree image on homepage
 #tree-img {
@@ -65,21 +72,27 @@ appears when user hovers
     transform: translate(450px, -630px);
 }
 
+#bg-image-join {
+    background-image: url("https://pac-hs.co.uk/wp-content/uploads/2016/11/Red-Stripes-Wrapture-Printed-Tissue.jpg");
+}
+
 // basic login styling for join page
 #login {
-    @extend .form;
+    @extend #form;
     font-size: 20px;
     font-weight: bold;
 }
 
 // enter name field
 #enter-name {
-    @extend .form;
+    @extend #form;
     margin-top: 5px;
     margin-bottom: 14px;
 }
 
 // enter join code field
 #enter-code {
-    @extend .form;
+    @extend #form;
+    margin-top: 5px;
+    margin-bottom: 14px;
 }
