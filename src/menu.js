@@ -3,10 +3,22 @@ const viewPath = "../html/view.html";
 
 // call functions to change element href to correct location
 document.getElementById("join-exchange").onclick =
-() => { location.href = joinPath; };
+() => {
+    $("#join-exchange").css("background-color", "lightgray");
+    location.href = joinPath;
+};
 document.getElementById("view-exchanges").onclick =
-() => { location.href = viewPath; };
+() => {
+    $("#view-exchanges").css("background-color", "lightgray");
+    location.href = viewPath;
+};
 document.getElementById("join-text-button").onclick =
-() => { location.href = joinPath; };
+() => {
+    $("#join-exchange").css("background-color", "lightgray");
+    location.href = joinPath;
+};
 document.getElementById("view-text-button").onclick =
-() => { location.href = viewPath; };
+() => {
+    $("#view-exchanges").css("background-color", "lightgray");
+    location.href = viewPath;
+};
