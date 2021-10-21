@@ -1,5 +1,3 @@
-// script to grab elements from the form
-const form = document.getElementById("form");
-const name = form.elements["name"];
-const code = form.elements["code"];
-
+const SQL = await initSqlJs({
+    locateFile: file => `https://sql.js.org/dist/${file}`
+});

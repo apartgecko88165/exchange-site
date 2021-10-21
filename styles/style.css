@@ -2,14 +2,23 @@
   background-color: #ededed;
 }
 
-.form-border {
+.form-group {
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+}
+
+.form-group .form-border {
+  position: relative;
+  left: -50%;
+  bottom: -50%;
   background-color: #f1f1f1;
   border: 4px solid black;
   border-radius: 6px;
   padding-left: 20px;
-  width: 17%;
-  margin-top: 50px;
-  margin-left: 50px;
+  width: 65%;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 /*
@@ -38,7 +47,7 @@ appears when user hovers
           transform: translate(50px, -225px);
 }
 
-#form, #login, #enter-name, #enter-code {
+#form, #login, #enter-name, #enter-name-label, #enter-code, #enter-code-label {
   margin-left: 12px;
   margin-right: 12px;
   font-family: Arial, Helvetica, sans-serif;
@@ -71,12 +80,12 @@ appears when user hovers
   font-weight: bold;
 }
 
-#enter-name {
+#enter-name, #enter-name-label {
   margin-top: 5px;
   margin-bottom: 14px;
 }
 
-#enter-code {
+#enter-code, #enter-code-label {
   margin-top: 5px;
   margin-bottom: 14px;
 }

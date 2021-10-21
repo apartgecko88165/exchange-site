@@ -8,14 +8,21 @@ $basic-font: Arial, Helvetica, sans-serif;
 }
 
 // border element for join form
-.form-border {
-    background-color: rgb(241, 241, 241);
-    border: 4px solid black;
-    border-radius: 6px;
-    padding-left: 20px;
-    width: 17%;
-    margin-top: 50px;
-    margin-left: 50px;
+.form-group {
+    position: fixed;
+    left: 50%;
+    bottom: 50%;
+    .form-border {
+        position: relative;
+        left: -50%;
+        bottom: -50%;
+        background-color: rgb(241, 241, 241);
+        border: 4px solid black;
+        border-radius: 6px;
+        padding-left: 20px;
+        width: 65%;
+        transform: scale(2);
+    }
 }
 
 /*
@@ -96,3 +103,6 @@ appears when user hovers
     margin-top: 5px;
     margin-bottom: 14px;
 }
+
+#enter-name-label { @extend #enter-name; }
+#enter-code-label { @extend #enter-code; }

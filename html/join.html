@@ -8,16 +8,21 @@
     <title>Christmas Exchange - Join</title>
 </head>
 <body>
-    <div class="form-border">
-        <form id="form">
-            <h1 id="login">Join Exchange</h1>
-            <label for="enter-name" id="enter-name">What is your name?</label><br>
-            <input id="enter-name" name="enter-name" type="text" placeholder="IE: James Jimmy III"></input>
-            <label for="enter-code" id="enter-code">Enter join code:</label><br>
-            <input id="enter-code" name="enter-code" type="text" placeholder="IE: abcd-1234-efgh-5678"></input>
-            <button id="join-submit-button">Join Exchange</button>
-        </form>
+    <div class="form-group">
+        <div class="form-border">
+            <form id="form">
+                <h1 id="login">Join Exchange</h1>
+                <label for="enter-name" id="enter-name-label">What is your name?</label><br>
+                <input id="enter-name" name="enter-name" type="text" placeholder="IE: James Jimmy III"></input>
+                <label for="enter-code" id="enter-code-label">Enter join code:</label><br>
+                <input id="enter-code" name="enter-code" type="text" placeholder="IE: abcd-1234-efgh-5678"></input>
+                <button id="join-submit-button">Join Exchange</button>
+            </form>
+        </div>
     </div>
+    <!-- import jquery, only for basic styling -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/sql-wasm.js"></script>
     <script src="../src/join.js"></script>
 </body>
 </html>
